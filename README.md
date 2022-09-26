@@ -6,7 +6,7 @@ Running `eslint --fix ./src/*` will format code as part of the linting process.
 
 Editors like VS Code can be configured to do this automatically on save:
 
-```json
+```js
 // settings.json
 {
   // option 1:
@@ -25,7 +25,7 @@ Option 1 should suffice unless you have other non-formatting related commands yo
 
 If you would prefer not to see ESLint formatting feedback inside VS Code while you work (it can be distracting), you can add a rule customization (specifically for your editor) that disables the prettier-related violations from appearing as red squigglies:
 
-```json
+```js
 // settings.json
 {
  "eslint.rules.customizations": [
