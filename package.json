@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Sample configuration of ESLint + prettier",
   "scripts": {
-    "lint": "eslint --fix ./src/*",
-    "lint:trace": "TIMING=1 time eslint --fix ./src/*",
+    "lint": "eslint --fix ./src/* --ignore-path .gitignore",
+    "lint:ci": "eslint ./src/* --ignore-path .gitignore",
+    "lint:trace": "TIMING=1 time eslint --fix ./src/* --ignore-path .gitignore",
+    "format": "prettier --write .",
+    "format:ci": "prettier --check .",
     "prepare": "husky install"
   },
   "author": "Solomon Hawk (solomon.hawk@viget.com)",

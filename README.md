@@ -24,7 +24,6 @@ $ npm i -D typescript @typescript-eslint/eslint-plugin
 
 Set your ESLint `parser` to `@typescript-eslint/parser` and add `"plugin:@typescript-eslint/recommended"` to `extends` (before `"prettier"`) if you want a solid baseline of TS rules.
 
-
 ## Configure VSCode to run `eslint --fix` and `prettier` on save
 
 ```js
@@ -74,9 +73,6 @@ npx lint-staged
 
 ```json
 {
-  "*.{js,ts,tsx}": [
-    "eslint --fix",
-    "prettier --write"
-  ]
+  "*.{js,ts,tsx}": ["eslint --fix", "prettier --write"]
 }
 ```
