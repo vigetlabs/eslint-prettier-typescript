@@ -1,8 +1,6 @@
+/** @type {import('eslint').ESLint.ConfigData} */
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
-  extends: [
-    "plugin:prettier/recommended",
-    "plugin:@typescript-eslint/recommended",
-  ],
+  extends: ["plugin:@typescript-eslint/recommended", "prettier"],
 };

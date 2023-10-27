@@ -1,13 +1,14 @@
+/** @type {import('prettier').Config} */
 module.exports = {
-  arrowParens: 'always',
+  arrowParens: "always",
   bracketSameLine: false,
   bracketSpacing: true,
-  htmlWhitespaceSensitivity: 'css',
+  htmlWhitespaceSensitivity: "css",
   printWidth: 80,
-  proseWrap: 'preserve',
+  proseWrap: "preserve",
   semi: true,
-  singleQuote: true,
+  singleQuote: false,
   tabWidth: 2,
-  trailingComma: 'all',
+  trailingComma: "all",
   useTabs: false,
 };
